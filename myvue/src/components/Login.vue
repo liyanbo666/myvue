@@ -72,7 +72,7 @@
       handleSubmit(name) {
         this.$refs[name].validate((valid) => {
           if (valid) {
-            this.$axios.post('/api/system/doLogin', this.formInline,{headers: {'Content-Type': 'application/json;charset=utf-8'}}).then(res => {
+            this.$axios.post('/api/system/doLogin', this.formInline,{'content-type': 'application/x-www-form-urlencoded'}).then(res => {
               console.log(res.data);
               if("200"==res.data.code){
                 this.$router.push({name: "Upload"});

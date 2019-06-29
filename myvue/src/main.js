@@ -8,8 +8,8 @@ import 'iview/dist/styles/iview.css' // 使用 CSS
 import axios from 'axios'
 import "../config/http"
 import $ from 'jquery'
-// import './utils/three.min'
-//import '../../my-theme/d';//使用iview的主题
+
+
 Vue.prototype.$axios = axios    //使用axios
 Vue.use(iView)
 Vue.config.productionTip = false

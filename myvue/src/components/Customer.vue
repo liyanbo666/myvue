@@ -151,31 +151,45 @@
           {
             title: '姓名',
             key: 'name',
+            align:"center",
+            width: 130,
             fixed: 'left'
           },
           {
             title: '电话',
-            key: 'phone'
+            key: 'phone',
+            width: 140,
+            align:"center"
           },
           {
             title: '微信号',
+            align:"center",
+            width: 140,
             key: 'customerWXNum'
           },
           {
             title: '身份证号',
+            align:"center",
+            width: 200,
             key: 'idCard'
           },
           {
-            title: '地址',
-            key: 'address'
+            title: '客户来源',
+            align:"center",
+            width: 170,
+            key: 'originValue'
           },
           {
-            title: '客户来源',
-            key: 'originValue'
+            title: '地址',
+            align:"center",
+            width: 300,
+            key: 'address'
           },
           {
             title: '操作',
             key: 'operation',
+            align:"center",
+            width: 250,
             fixed: 'right',
             render: (h, params) => {
               return h('div', [

@@ -17,9 +17,8 @@
         style="color: hotpink;font-size: larger" target="_blank">贝贝</span> 在一起的
         <div id="clock"></div>
       </div>
-      <div id="canvasDiv">
-      </div>
-      <canvas id="canvas" width="1100" height="680"></canvas>
+
+      <canvas id="canvas" width="1100" height="100%"></canvas>
     </div>
     <audio id="myAudio" src="../../static/js/Love_files/Love.mp3" autoplay="autoplay" loop="loop"></audio>
   </div>

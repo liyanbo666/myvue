@@ -6,24 +6,23 @@
    <!--导航-->
      <div id="homeMenu">
        <Row>
-         <Col span="8">
          <Menu :theme="theme2" @on-select="changeMenu">
            <Submenu name="Home">
              <template slot="title">
                <Icon type="ios-paper" />
-               内容管理
+               客户管理
              </template>
              <MenuItem name="Upload">个人相册</MenuItem>
              <MenuItem name="SpecialPicture">图片特效</MenuItem>
-             <MenuItem name="Time">举报管理</MenuItem>
+             <MenuItem name="Customer">客户管理</MenuItem>
            </Submenu>
-           <Submenu name="2">
+           <Submenu name="OrderManage">
              <template slot="title">
                <Icon type="ios-people" />
-               用户管理
+               订单管理
              </template>
-             <MenuItem name="2-1">新增用户</MenuItem>
-             <MenuItem name="2-2">活跃用户</MenuItem>
+             <MenuItem name="Order">订单</MenuItem>
+             <MenuItem name="DealOrder">成交订单</MenuItem>
            </Submenu>
            <Submenu name="3">
              <template slot="title">
@@ -41,7 +40,6 @@
              </MenuGroup>
            </Submenu>
          </Menu>
-         </Col>
        </Row>
        <br>
        <!--  <p>Change theme</p>

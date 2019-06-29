@@ -5,7 +5,9 @@ import Login from '@/components/Login'
 import Home from '@/components/Home'
 import Upload from '@/components/Upload'
 import SpecialPicture from '@/components/SpecialPicture'
-import Time from '@/components/Time'
+import Order from '@/components/Order'
+import Customer from '@/components/Customer'
+import DealOrder from '@/components/DealOrder'
 
 Vue.use(Router)
 
@@ -38,10 +40,28 @@ export default new Router({
           component: Upload
         },
         {
-          path: '/Home/Time',
-          name: 'Time',
-          component: Time
+          path: '/Home/Customer',
+          name: 'Customer',
+          component: Customer
         }
+      ]
+    },
+    {
+      path: '/OrderManage',
+      name: 'OrderManage',
+      component: Home,
+      children: [
+        {
+          path: '/Home/Order',
+          name: 'Order',
+          component: Order
+        },
+        {
+          path: '/Home/DealOrder',
+          name: 'DelOrder',
+          component: DealOrder
+        }
+
       ]
     }
 

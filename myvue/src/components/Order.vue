@@ -297,58 +297,57 @@
             key: 'name',
             align:"center",
             fixed: 'left',
-            width: 200,
+            width: 120,
 
           },
           {
             title: '电话',
             align:"center",
             key: 'phone',
-            width: 200,
+            width: 130,
           },
           {
             title: '微信号',
             align:"center",
             key: 'customerWX',
-            width: 200,
+            width: 140,
           },
           {
             title: '是否已加微信',
             align:"center",
             key: 'existWX',
-            width: 200,
+            width: 130,
           },
           {
             title: '咨询/推荐课程',
             align:"center",
             key: 'course',
-            width: 200,
+            width: 130,
           },
           {
             title: '跟进日期',
             align:"center",
             key: 'consultTime',
-            width: 200,
+            width: 150,
           },
 
           {
             title: '下一步跟进日期',
             align:"center",
             key: 'nextConsultTime',
-            width: 200,
+            width: 150,
           },
           {
             title: '备注',
             align:"center",
             key: 'remark',
-            width: 200,
+            width: 210,
           },
-
           {
             title: '操作',
             align:"center",
             key: 'operation',
-            width: 250,
+            width: 200,
             fixed: 'right',
             render: (h, params) => {
               return h('div', [
